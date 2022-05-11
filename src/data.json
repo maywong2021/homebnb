@@ -1,0 +1,67 @@
+{
+  "users": [
+  {
+    "id": 1,
+    "username": "may",
+    "password": "may123"
+  },
+  {
+    "id": 2,
+    "username": "kyle",
+    "password": "kyle123"
+  },
+  {
+    "id": 3,
+    "username": "aaron",
+    "password": "aaron123"
+  },
+  {
+    "id": 4,
+    "username": "francisco",
+    "password": "francisco123"
+  }
+],
+  "listings": [
+    {
+  "id": 1,
+    "title": "cutest cottage in the area!!",
+    "img": [ "https://unsplash.com/photos/gu6Peq5INUk", 
+      "https://unsplash.com/photos/AyDLzRMjbew", 
+      "https://unsplash.com/photos/6iTJzT2sRBs"],
+    "description": "the most amazing place you'll ever stay at!!",
+    "location": "Anywhere, USA",
+    "price": "$50"
+  },
+  {
+    "id": 2,
+    "title": "best apartment in the city!!",
+    "img": [ "https://unsplash.com/photos/ucnZANGmyxM", 
+      "https://unsplash.com/photos/OtXADkUh3-I", 
+      "https://unsplash.com/photos/MP0bgaS_d1c" ],
+    "description": "greatest view of the lake",
+    "location": "Anywhere, USA",
+    "price": "$100"
+  }
+],
+"amenities": [ 
+  {
+    "parking": true,
+    "wifi": true,
+    "hair dryer": true,
+    "kitchenette": true,
+    "bathroom essentials": true,
+    "tv": true,
+    "air conditioning": true,
+    "heating": true,
+    "backyard": true,
+    "bedroom comforts": true,
+    "coffee maker": true,
+    "smoke alarm": true
+  }
+ ]
+
+}
+  
+
+
+
