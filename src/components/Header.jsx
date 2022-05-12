@@ -1,6 +1,4 @@
 import Button from 'react-bootstrap/Button'
-import Navbar from 'react-bootstrap/Navbar'
-import Form from 'react-bootstrap/Form'
 import Dropdown from 'react-bootstrap/Dropdown'
 import Container from 'react-bootstrap/Container'
 import { BiUserCircle } from 'react-icons/bi'
@@ -51,6 +49,10 @@ export default function Header() {
 }
 
 /* 
+
+? this was what I first tried but was having trouble with Dropdown.menu showing up in a 
+? poor position so I started over. Can delete this probably wont use it later
+
   <Navbar sticky='top' className='d-flex justify-content-between w-100'>
     <Navbar.Brand className='text-danger' expand='lg'>
       HomeBnB

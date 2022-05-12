@@ -11,7 +11,7 @@
 #currency-language:hover {
   padding: 10px;
   border-radius: 50%;
-  background-color: rgba(165, 165, 165, 0.336);
+  background-color: rgba(225, 225, 225, 0.336);
 }
 
 #host-btn {
@@ -22,7 +22,7 @@
 #host-btn:hover {
   padding: 10px;
   border-radius: 15px;
-  background-color: rgba(165, 165, 165, 0.336);
+  background-color: rgba(225, 225, 225, 0.336);
 }
 
 .dropdown-toggle:after {
@@ -33,7 +33,7 @@
   color: rgb(100, 100, 100) !important;
   padding: 5px;
   border: 1px solid rgba(100, 100, 100, 0.404);
-  border-radius: 15px;
+  border-radius: 2rem;
 }
 
 #dropdown-profile:hover {
