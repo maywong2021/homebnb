@@ -47,28 +47,3 @@ export default function Header() {
     </header>
   )
 }
-
-/* 
-
-? this was what I first tried but was having trouble with Dropdown.menu showing up in a 
-? poor position so I started over. Can delete this probably wont use it later
-
-  <Navbar sticky='top' className='d-flex justify-content-between w-100'>
-    <Navbar.Brand className='text-danger' expand='lg'>
-      HomeBnB
-    </Navbar.Brand>
-    <Dropdown drop='down' navbar={true}>
-      <Dropdown.Toggle variant='danger' id='dropdown-basic'>
-        <BiUserCircle size={30} />
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Dropdown.Item href='#'>Sign up</Dropdown.Item>
-        <Dropdown.Item href='#'>Log in</Dropdown.Item>
-        <Dropdown.Divider />
-        <Dropdown.Item href='#'>Host your home</Dropdown.Item>
-        <Dropdown.Item href='#'>Host an experience</Dropdown.Item>
-        <Dropdown.Item href='#'>Help</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-  </Navbar>
-*/
