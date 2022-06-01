@@ -1,6 +1,5 @@
 import Button from 'react-bootstrap/Button'
 import Dropdown from 'react-bootstrap/Dropdown'
-import Container from 'react-bootstrap/Container'
 import { BiUserCircle } from 'react-icons/bi'
 import { HiMenu } from 'react-icons/hi'
 import { BsGlobe2 } from 'react-icons/bs'
