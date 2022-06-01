@@ -2,7 +2,7 @@ export default function Location({
   location: { where, description, distance, airport },
 }) {
   return (
-    <div className='d-flex flex-column my-3'>
+    <div className='d-flex flex-column my-5'>
       <h2>Location</h2>
       <div
         className='d-flex mb-4 justify-content-center align-items-center align-self-center bg-secondary '
