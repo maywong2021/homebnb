@@ -7,8 +7,8 @@ import { BsGlobe2 } from 'react-icons/bs'
 
 export default function Header() {
   return (
-    <header className='d-flex justify-content-between align-items-center '>
-      <Container className='d-flex justify-content-between align-items-center my-2'>
+    <header className='d-flex justify-content-between align-items-center w-75'>
+      <div className='d-flex justify-content-between align-items-center my-2 w-100'>
         <img src='https://i.imgur.com/u8RwamC.png' style={{ width: '200px' }} />
 
         <div className='d-flex justify-content-around align-items-center w-25'>
@@ -43,7 +43,7 @@ export default function Header() {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-      </Container>
+      </div>
     </header>
   )
 }

@@ -39,3 +39,17 @@
 #dropdown-profile:hover {
   box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.712);
 }
+
+hr {
+  display: block;
+  color: gray;
+  margin: auto;
+  width: 95%;
+}
+
+#room-list {
+  list-style-type: none;
+}
+#listing-desc {
+  width: 60%;
+}
