@@ -42,7 +42,10 @@
         { "name": "bed", "count": 1 },
         { "name": "bath", "count": 1 }
       ],
-      "description": "Take in the rustic, fairy tale vibe of this custom-made treehouse in the midst of towering white oaks. Recline in a rocking chair and watch the sunset over the mountains, or try your hand at some stargazing from the comfort of the deluxe doona. \n Note, we don't allow pets, sorry! Also, prior to booking, please read and understand the Airbnb strict cancellation policy.",
+      "description": {
+        "main": "Take in the rustic, fairy tale vibe of this custom-made treehouse in the midst of towering white oaks. Recline in a rocking chair and watch the sunset over the mountains, or try your hand at some stargazing from the comfort of the deluxe doona.",
+        "notes": "Note, we don't allow pets, sorry! Also, prior to booking, please read and understand the Airbnb strict cancellation policy."
+      },
       "price": 364,
       "amenities": [
         {
