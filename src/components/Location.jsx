@@ -1,19 +1,25 @@
-export default function Location() {
+export default function Location({
+  location: { where, description, distance, airport },
+}) {
   return (
-    <>
-      <hr />
-      <div>
-        <h2>Location</h2>
-        <h3>Asheville, North Carolina, United States</h3>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </div>
-        <h3>Distance from Asheville Regional Airport</h3>
-        <div>25 mins by car without traffic</div>
+    <div className='d-flex flex-column my-3'>
+      <h2>Location</h2>
+      <div
+        className='d-flex mb-4 justify-content-center align-items-center align-self-center bg-secondary '
+        style={{ width: '600px', height: '400px' }}
+      >
+        <h1>insert google maps?</h1>
       </div>
-    </>
-  );
+      <div className='d-flex justify-content-between'>
+        <div style={{ width: '45%' }}>
+          <h4 className='mb-3'>{where}</h4>
+          <p>{description}</p>
+        </div>
+        <div style={{ width: '45%' }}>
+          <h4 className='mb-3'>Distance from {airport}</h4>
+          <p>{distance}</p>
+        </div>
+      </div>
+    </div>
+  )
 }
