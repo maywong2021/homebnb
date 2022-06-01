@@ -136,7 +136,8 @@
       "location": {
         "where": "Asheville, North Carolina, United States",
         "description": "Our treehouse is situated on a 16-acre property about 10 minutes from Asheville. Restaurants, grocery stores, and the local visitor center are all within easy driving distance of the property. Although the location is wooded, there is some road noise in the distance.",
-        "airport": "25 mins by car without traffic"
+        "distance": "25 mins by car without traffic",
+        "airport": "Asheville Regional Airport"
       }
     }
   ],
