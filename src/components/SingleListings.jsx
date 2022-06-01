@@ -37,7 +37,8 @@ export default function SingleListings() {
       <hr />
       <Amenities />
       <Reviews />
-      <Location />
+      <hr />
+      <Location location={listing?.location} />
       <ThingsToKnow />
     </div>
   )
