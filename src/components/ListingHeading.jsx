@@ -19,7 +19,7 @@ export default function ListingHeading({
           <p className='align-self-center mb-0'>4.99</p>
           <BsDot size={10} />
           <Button variant='link' className='text-dark'>
-            {reviews.length} reviews
+            {reviews?.length} reviews
           </Button>
           <BsDot size={10} />
           <GoPerson id='go-person' />
@@ -27,7 +27,7 @@ export default function ListingHeading({
           <BsDot size={10} />
           <span className='d-flex'>
             <Button variant='link' className='text-dark' value='Ashenville,'>
-              {location.where}
+              {location?.where}
             </Button>
           </span>
         </div>
