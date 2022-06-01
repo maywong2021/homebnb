@@ -3,12 +3,14 @@
     {
       "id": 1,
       "username": "may",
-      "password": "may123"
+      "password": "may123",
+      "userIcon": "https://data.whicdn.com/images/208368003/original.jpg"
     },
     {
       "id": 2,
       "username": "kyle",
-      "password": "kyle123"
+      "password": "kyle123",
+      "userIcon": "https://i.etsystatic.com/5131015/r/il/2b3af9/302290408/il_570xN.302290408.jpg"
     },
     {
       "id": 3,
@@ -30,14 +32,17 @@
         "https://unsplash.com/photos/AyDLzRMjbew",
         "https://unsplash.com/photos/6iTJzT2sRBs"
       ],
-      "host": "Treehouse hosted by CyberKnights",
+      "host": {
+        "username": "kyle",
+        "userIcon": "https://i.etsystatic.com/5131015/r/il/2b3af9/302290408/il_570xN.302290408.jpg"
+      },
       "arrangement": [
-        { "guests": 4 },
-        { "bedrooms": 1 },
-        { "bed": 1 },
-        { "bath": 1 }
+        { "name": "guest", "count": 4 },
+        { "name": "bedroom", "count": 1 },
+        { "name": "bed", "count": 1 },
+        { "name": "bath", "count": 1 }
       ],
-      "description": "Take in the rustic, fairy tale vibe of this custom-made treehouse in the midst of towering white oaks. Recline in a rocking chair and watch the sunset over the mountains, or try your hand at some stargazing from the comfort of the deluxe doona.",
+      "description": "Take in the rustic, fairy tale vibe of this custom-made treehouse in the midst of towering white oaks. Recline in a rocking chair and watch the sunset over the mountains, or try your hand at some stargazing from the comfort of the deluxe doona. \n Note, we don't allow pets, sorry! Also, prior to booking, please read and understand the Airbnb strict cancellation policy.",
       "price": 364,
       "amenities": [
         {
