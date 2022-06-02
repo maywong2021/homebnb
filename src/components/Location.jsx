@@ -1,6 +1,4 @@
-export default function Location({
-  location: { where, description, distance, airport },
-}) {
+export default function Location({ listing: { location } }) {
   return (
     <div className='d-flex flex-column my-5'>
       <h2>Location</h2>
@@ -12,12 +10,12 @@ export default function Location({
       </div>
       <div className='d-flex justify-content-between'>
         <div style={{ width: '45%' }}>
-          <h4 className='mb-3'>{where}</h4>
-          <p>{description}</p>
+          <h4 className='mb-3'>{location?.where}</h4>
+          <p>{location?.description}</p>
         </div>
         <div style={{ width: '45%' }}>
-          <h4 className='mb-3'>Distance from {airport}</h4>
-          <p>{distance}</p>
+          <h4 className='mb-3'>Distance from {location?.airport}</h4>
+          <p>{location?.distance}</p>
         </div>
       </div>
     </div>
