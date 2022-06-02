@@ -28,7 +28,37 @@ export default function SingleListings() {
         className='d-flex justify-content-center align-items-center'
         style={{ minWidth: '500px', minHeight: '400px' }}
       >
-        <h1>Listing Images</h1>
+        <div className='d-flex'>
+          <img
+            className='my-4'
+            alt='property image'
+            src={listing?.img?.[0]}
+            style={{
+              maxWidth: '700px',
+              maxHeight: '400px',
+              borderRadius: '1rem 0 0 1rem',
+            }}
+          />
+          <img
+            className='my-4 mx-2'
+            alt='property image'
+            src={listing?.img?.[1]}
+            style={{
+              maxWidth: '700px',
+              maxHeight: '400px',
+            }}
+          />
+          <img
+            className='my-4'
+            alt='property image'
+            src={listing?.img?.[2]}
+            style={{
+              maxWidth: '700px',
+              maxHeight: '400px',
+              borderRadius: '0 1rem 1rem 0',
+            }}
+          />
+        </div>
       </div>
       <div className='d-flex justify-content-between'>
         <ListingDescription listing={listing} />
