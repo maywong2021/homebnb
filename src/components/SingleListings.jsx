@@ -1,66 +1,81 @@
-import { AiFillStar } from 'react-icons/ai'
-import { BsDot } from 'react-icons/bs'
-import { GoPerson } from 'react-icons/go'
-import { FiShare } from 'react-icons/fi'
-import { AiOutlineHeart } from 'react-icons/ai'
-import Button from 'react-bootstrap/Button'
+import { useState, useEffect } from 'react'
 import {
   ListingDescription,
+  ListingHeading,
+  CalendarSection,
   Amenities,
   Reviews,
   Location,
   ThingsToKnow,
-} from "./index";
+} from './index'
+import { getListing } from '../axios-services'
 
 export default function SingleListings() {
+  const [listing, setListing] = useState({})
+
+  useEffect(() => {
+    //? when more pages are set up replace the 1 in 'getListing(1)' with
+    //? the useParams hook to grab differenct listings
+    //? E.g. if url = home.bnb/listing/:listingId || const { listingId } = useParams
+    //?  const currListing = getListing(listingId) || this will make the code more dynamic
+    const currListing = getListing(1)
+    setListing(currListing)
+  }, [])
+
   return (
-    <div className="d-flex flex-column justify-content-center w-75">
-      <div>
-        <h1>The Treehouse of your dreams</h1>
-      </div>
-      <div className="d-flex justify-content-between align-content-center">
-        <div className="d-flex align-items-center gap-5">
-          <AiFillStar size={20} />
-          <p className="align-self-center mb-0">4.99</p>
-          <BsDot size={10} />
-          <Button variant="link" className="text-dark">
-            423 reviews
-          </Button>
-          <BsDot size={10} />
-          <GoPerson id="go-person" />
-          <p className="mb-0">Superhost</p>
-          <BsDot size={10} />
-          <span className="d-flex">
-            <Button variant="link" className="text-dark" value="Ashenville,">
-              Asheville, North Carolina, United States
-            </Button>
-          </span>
-        </div>
-        <div className="d-flex ">
-          <div>
-            <FiShare />
-            <Button variant="link" className="text-dark" value="Share">
-              Share
-            </Button>
-          </div>
-          <div>
-            <AiOutlineHeart />
-            <Button variant="link" className="text-dark" value="Save">
-              Save
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div className="d-flex justify-content-between">
-        <ListingDescription />
-        <div className="w-25">
-            CALENDAR HERE
+    <div className='d-flex flex-column justify-content-center w-75'>
+      <ListingHeading listing={listing} />
+      <div
+        className='d-flex justify-content-center align-items-center'
+        style={{ minWidth: '500px', minHeight: '400px' }}
+      >
+        <div className='d-flex'>
+          <img
+            className='my-4'
+            alt='property image'
+            src={listing?.img?.[0]}
+            style={{
+              maxWidth: '700px',
+              maxHeight: '400px',
+              borderRadius: '1rem 0 0 1rem',
+            }}
+          />
+          <img
+            className='my-4 mx-2'
+            alt='property image'
+            src={listing?.img?.[1]}
+            style={{
+              maxWidth: '700px',
+              maxHeight: '400px',
+            }}
+          />
+          <img
+            className='my-4'
+            alt='property image'
+            src={listing?.img?.[2]}
+            style={{
+              maxWidth: '700px',
+              maxHeight: '400px',
+              borderRadius: '0 1rem 1rem 0',
+            }}
+          />
         </div>
       </div>
+      <div className='d-flex justify-content-between'>
+        <div>
+          <ListingDescription listing={listing} />
+          <CalendarSection />
+        </div>
+        <div className='w-25'>Booking / reservations</div>
+      </div>
+      <hr />
       <Amenities />
+      <hr />
       <Reviews />
-      <Location />
+      <hr />
+      {listing ? <Location listing={listing} /> : null}
+      <hr />
       <ThingsToKnow />
     </div>
-  );
+  )
 }
