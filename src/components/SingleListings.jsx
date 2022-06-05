@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import {
   ListingDescription,
   ListingHeading,
+  CalendarSection,
   Amenities,
   Reviews,
   Location,
@@ -61,15 +62,18 @@ export default function SingleListings() {
         </div>
       </div>
       <div className='d-flex justify-content-between'>
-        <ListingDescription listing={listing} />
-        <div className='w-25'>CALENDAR HERE</div>
+        <div>
+          <ListingDescription listing={listing} />
+          <CalendarSection />
+        </div>
+        <div className='w-25'>Booking / reservations</div>
       </div>
       <hr />
       <Amenities />
       <hr />
       <Reviews />
       <hr />
-      <Location location={listing?.location} />
+      {listing ? <Location listing={listing} /> : null}
       <hr />
       <ThingsToKnow />
     </div>
