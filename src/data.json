@@ -1,220 +1,67 @@
 {
   "users": [
-    {
-      "id": 1,
-      "username": "may",
-      "password": "may123",
-      "userIcon": "https://data.whicdn.com/images/208368003/original.jpg"
-    },
-    {
-      "id": 2,
-      "username": "kyle",
-      "password": "kyle123",
-      "userIcon": "https://i.etsystatic.com/5131015/r/il/2b3af9/302290408/il_570xN.302290408.jpg"
-    },
-    {
-      "id": 3,
-      "username": "aaron",
-      "password": "aaron123"
-    },
-    {
-      "id": 4,
-      "username": "francisco",
-      "password": "francisco123"
-    }
-  ],
+  {
+    "id": 1,
+    "username": "may",
+    "password": "may123"
+  },
+  {
+    "id": 2,
+    "username": "kyle",
+    "password": "kyle123"
+  },
+  {
+    "id": 3,
+    "username": "aaron",
+    "password": "aaron123"
+  },
+  {
+    "id": 4,
+    "username": "francisco",
+    "password": "francisco123"
+  }
+],
   "listings": [
     {
-      "id": 1,
-      "title": "The Treehouse of your dreams",
-      "img": [
-        "https://images.unsplash.com/photo-1618767689160-da3fb810aad7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "https://images.unsplash.com/photo-1626290131022-4e5a5e167173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "https://images.unsplash.com/photo-1626290246891-a498b0097e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-      ],
-      "host": {
-        "username": "kyle",
-        "userIcon": "https://i.etsystatic.com/5131015/r/il/2b3af9/302290408/il_570xN.302290408.jpg"
-      },
-      "arrangement": [
-        { "name": "guest", "count": 4 },
-        { "name": "bedroom", "count": 1 },
-        { "name": "bed", "count": 1 },
-        { "name": "bath", "count": 1 }
-      ],
-      "description": {
-        "main": "Take in the rustic, fairy tale vibe of this custom-made treehouse in the midst of towering white oaks. Recline in a rocking chair and watch the sunset over the mountains, or try your hand at some stargazing from the comfort of the deluxe doona.",
-        "notes": "Note, we don't allow pets, sorry! Also, prior to booking, please read and understand the Airbnb strict cancellation policy."
-      },
-      "price": 364,
-      "amenities": [
-        {
-          "id": 1,
-          "name": "parking",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/parking.png?im_w=240"
-        },
-        {
-          "id": 2,
-          "name": "wifi",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/wireless-internet.png?im_w=240"
-        },
-        {
-          "id": 3,
-          "name": "hair dryer",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/hair-dryer.png?im_w=240"
-        },
-        {
-          "id": 4,
-          "name": "kitchenette",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/kitchen.png?im_w=240"
-        },
-        {
-          "id": 5,
-          "name": "bathroom essentials",
-          "description": "towels, soap, shampoo, and toilet paper",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/essentials.png?im_w=240"
-        },
-        {
-          "id": 6,
-          "name": "tv",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/tv.png?im_w=240"
-        },
-        {
-          "id": 7,
-          "name": "air conditioning",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/air-conditioning.png?im_w=240"
-        },
-        {
-          "id": 8,
-          "name": "heating",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/heating.png?im_w=240"
-        },
-        {
-          "id": 9,
-          "name": "backyard",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/garden-backyard.png?im_w=240"
-        },
-        {
-          "id": 10,
-          "name": "bedroom comforts",
-          "description": "bed sheets, pillows, and hangers",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/extra-pillows-blankets.png?im_w=240"
-        },
-        {
-          "id": 11,
-          "name": "coffee maker",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/coffee-maker.png?im_w=240"
-        },
-        {
-          "id": 12,
-          "name": "smoke alarm",
-          "description": "Hosts verify their safety amenities are present and maintained.",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/smoke-detector.png?im_w=240"
-        },
-        {
-          "id": 13,
-          "name": "carbon monoxide alarm",
-          "description": "Hosts verify their safety amenities are present and maintained.",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/co2detector.png?im_w=240"
-        },
-        {
-          "id": 14,
-          "name": "fire extinguisher",
-          "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/tv.png?im_w=240"
-        }
-      ],
-      "reviews": [
-        {
-          "user": {
-            "username": "May",
-            "userIcon": "https://data.whicdn.com/images/208368003/original.jpg"
-          },
-          "posted": "February 2022",
-          "description": "Amazing views and lovely hosts!!! :)"
-        }
-      ],
-      "location": {
-        "where": "Asheville, North Carolina, United States",
-        "description": "Our treehouse is situated on a 16-acre property about 10 minutes from Asheville. Restaurants, grocery stores, and the local visitor center are all within easy driving distance of the property. Although the location is wooded, there is some road noise in the distance.",
-        "distance": "25 mins by car without traffic",
-        "airport": "Asheville Regional Airport"
-      }
-    }
-  ],
-  "amenities": [
-    {
-      "id": 1,
-      "name": "parking",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/parking.png?im_w=240"
-    },
-    {
-      "id": 2,
-      "name": "wifi",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/wireless-internet.png?im_w=240"
-    },
-    {
-      "id": 3,
-      "name": "hair dryer",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/hair-dryer.png?im_w=240"
-    },
-    {
-      "id": 4,
-      "name": "kitchenette",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/kitchen.png?im_w=240"
-    },
-    {
-      "id": 5,
-      "name": "bathroom essentials",
-      "description": "towels, soap, shampoo, and toilet paper",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/essentials.png?im_w=240"
-    },
-    {
-      "id": 6,
-      "name": "tv",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/tv.png?im_w=240"
-    },
-    {
-      "id": 7,
-      "name": "air conditioning",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/air-conditioning.png?im_w=240"
-    },
-    {
-      "id": 8,
-      "name": "heating",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/heating.png?im_w=240"
-    },
-    {
-      "id": 9,
-      "name": "backyard",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/garden-backyard.png?im_w=240"
-    },
-    {
-      "id": 10,
-      "name": "bedroom comforts",
-      "description": "bed sheets, pillows, and hangers",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/extra-pillows-blankets.png?im_w=240"
-    },
-    {
-      "id": 11,
-      "name": "coffee maker",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/coffee-maker.png?im_w=240"
-    },
-    {
-      "id": 12,
-      "name": "smoke alarm",
-      "description": "Hosts verify their safety amenities are present and maintained.",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/smoke-detector.png?im_w=240"
-    },
-    {
-      "id": 13,
-      "name": "carbon monoxide alarm",
-      "description": "Hosts verify their safety amenities are present and maintained.",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/co2detector.png?im_w=240"
-    },
-    {
-      "id": 14,
-      "name": "fire extinguisher",
-      "thumbnail": "https://a0.muscache.com/airbnb/static/select/pdp/amenities/tile-view-2x/tv.png?im_w=240"
-    }
-  ]
+  "id": 1,
+    "title": "cutest cottage in the area!!",
+    "img": [ "https://unsplash.com/photos/gu6Peq5INUk", 
+      "https://unsplash.com/photos/AyDLzRMjbew", 
+      "https://unsplash.com/photos/6iTJzT2sRBs"],
+    "description": "the most amazing place you'll ever stay at!!",
+    "location": "Anywhere, USA",
+    "price": "$50"
+  },
+  {
+    "id": 2,
+    "title": "best apartment in the city!!",
+    "img": [ "https://unsplash.com/photos/ucnZANGmyxM", 
+      "https://unsplash.com/photos/OtXADkUh3-I", 
+      "https://unsplash.com/photos/MP0bgaS_d1c" ],
+    "description": "greatest view of the lake",
+    "location": "Anywhere, USA",
+    "price": "$100"
+  }
+],
+"amenities": [ 
+  {
+    "parking": true,
+    "wifi": true,
+    "hair dryer": true,
+    "kitchenette": true,
+    "bathroom essentials": true,
+    "tv": true,
+    "air conditioning": true,
+    "heating": true,
+    "backyard": true,
+    "bedroom comforts": true,
+    "coffee maker": true,
+    "smoke alarm": true
+  }
+ ]
+
 }
+  
+
+
+

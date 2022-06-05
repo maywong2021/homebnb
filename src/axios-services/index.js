@@ -12,9 +12,3 @@ export const getUserByUsername = async (userName) => {
   console.log('specUser :>> ', specUser)
   return specUser
 }
-
-export const getListing = (listingId) => {
-  const { listings } = JSON_DATA
-  const [singleListing] = listings.filter((listing) => listing.id === listingId)
-  return singleListing
-}
