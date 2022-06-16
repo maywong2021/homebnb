@@ -67,7 +67,7 @@ export default function SingleListings() {
           <ListingDescription listing={listing} />
           <CalendarSection />
         </div>
-        <div className='w-25'><Booking listing={listing}/></div>
+        <div className='d-flex justify-content-center align-items-start w-50'><Booking listing={listing}/></div>
       </div>
       <hr />
       <Amenities />

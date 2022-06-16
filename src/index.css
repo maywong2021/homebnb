@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 #currency-language {
   padding: 10px;
@@ -54,6 +57,101 @@ hr {
   width: 60%;
 }
 
-#vr {
-  border-right: 1px solid black;
+/* #vr {
+  border: 1px solid #A9A7A6;
+  height: 50px;
+  width: 1px;
+} */
+
+#checkin-btn {
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-size: 13px;
+}
+
+#checkin-btn:hover, #checkin-btn:not(:hover) {
+  border: none;
+}
+
+#checkin-btn:focus {
+  border: 3px solid black;
+  box-shadow: none !important;
+  border-radius: 0.3rem;
+  padding: 3px 9px;
+}
+
+#guests-btn {
+  background-color: white;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: 13px;
+}
+
+#guests-btn:focus {
+  border: 3px solid black;
+  box-shadow: none !important;
+  border-radius: 0.5rem;
+} 
+
+#booking-btns {
+  border-radius: 0.5rem;
+  border: 2px solid #A9A7A6;
+  margin: 0 !important;
+}
+
+#booking-card {
+  box-shadow: 0px 1px 10px #A9A7A6;
+  border-radius: 10px;
+  width: 80%;
+}
+
+#booking-info {
+  width: 85%;
+  padding: 25px 0px;
+}
+
+#check-btn {
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.mouse-cursor-gradient-tracking {
+  position: relative;
+  background: linear-gradient(#BD1E59 0%,
+    #92174D 50%,
+    #861453 100%);
+  border: none;
+  overflow: hidden;
+}
+
+.mouse-cursor-gradient-tracking span {
+  position: relative;
+}
+
+.mouse-cursor-gradient-tracking:before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle at center, #bd1e589a) !important;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.mouse-cursor-gradient-tracking:hover:before {
+  --size: 200px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.bold-font {
+  font-weight: bold;
 }
