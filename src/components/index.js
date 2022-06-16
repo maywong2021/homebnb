@@ -7,3 +7,4 @@ export { default as Reviews } from './Reviews'
 export { default as Location } from './Location'
 export { default as CalendarSection } from './CalendarSection'
 export { default as ThingsToKnow } from './ThingsToKnow'
+export { default as Booking } from "./Booking";

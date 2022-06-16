@@ -53,3 +53,7 @@ hr {
 #listing-desc {
   width: 60%;
 }
+
+#vr {
+  border-right: 1px solid black;
+}

@@ -14,7 +14,7 @@ export default function CalendarSection() {
   }
 
   return (
-    <>
+    <div className='d-flex flex-column' id="listing-desc">
       <p>${nights} nights in treehouse</p>
       <p>
         {date.length > 0
@@ -29,6 +29,6 @@ export default function CalendarSection() {
         onChange={changeDate}
         value={date}
       />
-    </>
-  )
+    </div>
+  );
 }

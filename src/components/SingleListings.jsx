@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 import {
   ListingDescription,
   ListingHeading,
@@ -7,66 +7,67 @@ import {
   Reviews,
   Location,
   ThingsToKnow,
-} from './index'
-import { getListing } from '../axios-services'
+  Booking
+} from "./index";
+import { getListing } from "../axios-services";
 
 export default function SingleListings() {
-  const [listing, setListing] = useState({})
+  const [listing, setListing] = useState({});
 
   useEffect(() => {
     //? when more pages are set up replace the 1 in 'getListing(1)' with
     //? the useParams hook to grab differenct listings
     //? E.g. if url = home.bnb/listing/:listingId || const { listingId } = useParams
     //?  const currListing = getListing(listingId) || this will make the code more dynamic
-    const currListing = getListing(1)
-    setListing(currListing)
-  }, [])
+    const currListing = getListing(1);
+    setListing(currListing);
+  }, []);
 
   return (
-    <div className='d-flex flex-column justify-content-center w-75'>
+    <div className="d-flex flex-column justify-content-center w-75">
       <ListingHeading listing={listing} />
       <div
-        className='d-flex justify-content-center align-items-center'
-        style={{ minWidth: '500px', minHeight: '400px' }}
+        className="d-flex justify-content-center align-items-center"
+        style={{ minWidth: "500px", minHeight: "400px" }}
       >
-        <div className='d-flex'>
+        <div className="d-flex">
           <img
-            className='my-4'
-            alt='property image'
+            className="my-4"
+            alt="property image"
             src={listing?.img?.[0]}
             style={{
-              maxWidth: '700px',
-              maxHeight: '400px',
-              borderRadius: '1rem 0 0 1rem',
+              maxWidth: "700px",
+              maxHeight: "400px",
+              borderRadius: "1rem 0 0 1rem",
             }}
           />
           <img
-            className='my-4 mx-2'
-            alt='property image'
+            className="my-4 mx-2"
+            alt="property image"
             src={listing?.img?.[1]}
             style={{
-              maxWidth: '700px',
-              maxHeight: '400px',
+              maxWidth: "700px",
+              maxHeight: "400px",
             }}
           />
           <img
-            className='my-4'
-            alt='property image'
+            className="my-4"
+            alt="property image"
             src={listing?.img?.[2]}
             style={{
-              maxWidth: '700px',
-              maxHeight: '400px',
-              borderRadius: '0 1rem 1rem 0',
+              maxWidth: "700px",
+              maxHeight: "400px",
+              borderRadius: "0 1rem 1rem 0",
             }}
           />
         </div>
       </div>
-      <div className='d-flex justify-content-between'>
-        <div>
+      <div className='d-flex justify-content-around'>
+        <div id="listing-desc">
           <ListingDescription listing={listing} />
           <CalendarSection />
         </div>
-        <div className='w-25'>Booking / reservations</div>
+        <div className='w-25'><Booking listing={listing}/></div>
       </div>
       <hr />
       <Amenities />
@@ -77,5 +78,5 @@ export default function SingleListings() {
       <hr />
       <ThingsToKnow />
     </div>
-  )
+  );
 }

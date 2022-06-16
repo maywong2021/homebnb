@@ -5,7 +5,7 @@ export default function ListingDescription({
   listing: { host, arrangement, description },
 }) {
   return (
-    <div id='listing-desc'>
+    <div>
       <div className='d-flex justify-content-between align-items-center'>
         <div>
           <h3>{`Treehouse hosted by ${host?.username}`}</h3>
