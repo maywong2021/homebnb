@@ -57,11 +57,13 @@ hr {
   width: 60%;
 }
 
-/* #vr {
-  border: 1px solid #A9A7A6;
-  height: 50px;
-  width: 1px;
-} */
+#vr {
+  border-right: 1px solid #dee2e6;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
 
 #checkin-btn {
   background-color: white;
@@ -70,7 +72,8 @@ hr {
   font-size: 13px;
 }
 
-#checkin-btn:hover, #checkin-btn:not(:hover) {
+#checkin-btn:hover,
+#checkin-btn:not(:hover) {
   border: none;
 }
 
@@ -88,20 +91,26 @@ hr {
   font-size: 13px;
 }
 
+#guests-btn:hover,
+#guests-btn:not(:hover) {
+  border: none;
+}
+
 #guests-btn:focus {
   border: 3px solid black;
   box-shadow: none !important;
-  border-radius: 0.5rem;
-} 
+  border-radius: 0.3rem;
+  padding: 3px 9px;
+}
 
 #booking-btns {
   border-radius: 0.5rem;
-  border: 2px solid #A9A7A6;
+  border: 2px solid #a9a7a6;
   margin: 0 !important;
 }
 
 #booking-card {
-  box-shadow: 0px 1px 10px #A9A7A6;
+  box-shadow: 0px 1px 10px #a9a7a6;
   border-radius: 10px;
   width: 80%;
 }
@@ -120,9 +129,12 @@ hr {
 
 .mouse-cursor-gradient-tracking {
   position: relative;
-  background: linear-gradient(#BD1E59 0%,
-    #92174D 50%,
-    #861453 100%);
+  background: linear-gradient(
+    to left top,
+    #d80765 0%,
+    #e31c5f 50%,
+    #f62f57 100%
+  );
   border: none;
   overflow: hidden;
 }
@@ -139,9 +151,14 @@ hr {
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle at center, #bd1e589a) !important;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(255, 147, 85, 0.247) 0,
+    rgb(216, 7, 101, 0.247) 100%,
+    transparent 100%
+  );
   transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
+  transition: width 0.2s ease, heighFA3359t 0.2s ease;
 }
 
 .mouse-cursor-gradient-tracking:hover:before {
@@ -154,4 +171,25 @@ h3 {
 
 .bold-font {
   font-weight: bold;
+}
+
+#bold-underline-font {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#close-guests-btn {
+  padding: 6px 6px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#close-guests-btn:hover {
+  background-color: #e7e7e762;
+  padding: 6px 6px;
+  border-radius: 0.3rem;
+}
+
+.dropdown-item:active {
+  background-color: white !important;
 }
